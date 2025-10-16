@@ -1,4 +1,4 @@
-<style>
+
 :root{
   --bg:#0b1911;
   --card:#12281a;
@@ -116,4 +116,5 @@ a{text-decoration:none;color:var(--accent);}
   margin-top:20px;padding:20px 0;color:var(--muted);
   font-size:.9rem;
 }
+
 .footer p{margin:6px 0;}
