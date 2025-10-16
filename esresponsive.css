@@ -1,0 +1,6 @@
+@media (max-width: 960px){
+  .layout{grid-template-columns:1fr}
+  .nav{display:none}
+  .slide-text h2{font-size:26px}
+  .odd-row{grid-template-columns:1.2fr .7fr .7fr .7fr .7fr}
+}
