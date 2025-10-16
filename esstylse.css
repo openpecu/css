@@ -56,3 +56,89 @@ a{color:var(--blue)}a:hover{text-decoration:underline}
 .links li{margin:6px 0}
 
 @keyframes fade{from{opacity:0}to{opacity:1}}
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero .carousel {
+  position: relative;
+  width: 100%;
+}
+
+.hero .carousel img {
+  width: 100%;
+  height: auto;
+  max-height: 560px; /* 保证高度不超过560px */
+  object-fit: cover; /* 保持图像比例，覆盖容器 */
+  transition: transform 0.5s ease;
+}
+
+.hero .carousel .slide {
+  position: relative;
+}
+
+.hero .slide-text {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.hero .carousel-nav {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  color: white;
+  font-size: 2rem;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.hero .carousel-nav.prev {
+  left: 10px;
+}
+
+.hero .carousel-nav.next {
+  right: 10px;
+}
+
+.hero .dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.hero .dots .dot {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.hero .dots .dot.active {
+  background-color: #ff8c00;
+}
+
+/* For mobile responsiveness */
+@media (max-width: 768px) {
+  .hero .slide-text h2 {
+    font-size: 1.25rem;
+  }
+
+  .hero .carousel-nav {
+    font-size: 1.5rem;
+  }
+
+  .hero .dots .dot {
+    width: 8px;
+    height: 8px;
+  }
+}
