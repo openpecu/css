@@ -86,3 +86,10 @@ a:hover{text-decoration:underline}
 .footer .links a:hover{color:#fff}
 
 @keyframes fade{from{opacity:0}to{opacity:1}}
+.flash {
+  animation: flashHighlight 1s ease;
+}
+@keyframes flashHighlight {
+  0% { background-color: rgba(255,215,0,0.4); }
+  100% { background-color: transparent; }
+}
