@@ -93,3 +93,23 @@ a:hover{text-decoration:underline}
   0% { background-color: rgba(255,215,0,0.4); }
   100% { background-color: transparent; }
 }
+.flash { animation: flashHighlight 1s ease; }
+@keyframes flashHighlight {
+  0% { background-color: rgba(255,215,0,0.4); }
+  100% { background-color: transparent; }
+}
+.tab.active {
+  background: #007bff;
+  color: #fff;
+}
+.tab {
+  cursor: pointer;
+  border: none;
+  background: #eee;
+  padding: 6px 14px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+.tab:not(.active):hover {
+  background: #ddd;
+}
