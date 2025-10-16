@@ -105,7 +105,6 @@ a:hover{text-decoration:underline}
 .tab {
   cursor: pointer;
   border: none;
-  background: #eee;
   padding: 6px 14px;
   border-radius: 4px;
   transition: all 0.2s ease;
@@ -113,3 +112,91 @@ a:hover{text-decoration:underline}
 .tab:not(.active):hover {
   background: #ddd;
 }
+.odds {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 4px 0;
+}
+.odd {
+  font-size: 0.9rem;
+  padding: 3px 6px;
+  border-radius: 4px;
+  background: #eee;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.flash .odd {
+  background: #fffa9c;
+}
+.odd.up {
+  color: #0a0;
+  background: #e8ffe8;
+}
+.odd.down {
+  color: #c00;
+  background: #ffeaea;
+}
+/* 🎯 ===== 赔率模块 ===== */
+.odds {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 6px 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.odd {
+  min-width: 48px;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+  background: #f6f6f6;
+  border-radius: 5px;
+  padding: 4px 6px;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.odd.home { color: #0066cc; }
+.odd.draw { color: #666; }
+.odd.away { color: #cc0000; }
+
+.odd.up {
+  color: #0a0 !important;
+  background: #e9ffe9;
+  animation: oddUp 0.6s ease;
+}
+.odd.down {
+  color: #c00 !important;
+  background: #ffe9e9;
+  animation: oddDown 0.6s ease;
+}
+
+@keyframes oddUp {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); background: #e6ffe6; }
+  100% { transform: scale(1); }
+}
+@keyframes oddDown {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); background: #ffe6e6; }
+  100% { transform: scale(1); }
+}
+
+.flash {
+  background: linear-gradient(90deg, #fff9d9 0%, #ffffff 100%);
+  transition: background 0.5s ease;
+}
+
+@media (max-width: 600px) {
+  .odds {
+    gap: 5px;
+  }
+  .odd {
+    font-size: 0.8rem;
+    min-width: 40px;
+    padding: 3px 4px;
+  }
+}
+
