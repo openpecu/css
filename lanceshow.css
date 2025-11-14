@@ -1,0 +1,325 @@
+/* ======================================== */
+/* ============== ARTICLE PAGE ============ */
+/* ======================================== */
+
+/* -------- Breadcrumb -------- */
+.breadcrumb {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 16px 0 10px;
+}
+
+.breadcrumb a {
+  color: #111827;
+  text-decoration: none;
+}
+
+.breadcrumb span {
+  color: #9ca3af;
+}
+
+/* -------- Article Title / Hero -------- */
+.article-title {
+  font-size: 30px;
+  font-weight: 800;
+  margin: 0 0 10px;
+  color: #111827;
+}
+
+.article-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.meta-author-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.author-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  object-fit: cover;
+}
+
+.meta-author {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.meta-role {
+  display: block;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.meta-time {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* -------- Article Featured Image -------- */
+.article-cover {
+  margin: 16px 0;
+  position: relative;
+}
+
+.article-cover img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.cover-caption {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 4px;
+  display: block;
+}
+
+/* -------- Article Content Body -------- */
+.article-content {
+  margin-top: 24px;
+  font-size: 16px;
+  color: #111827;
+  line-height: 1.75;
+}
+
+.article-content p {
+  margin: 16px 0;
+}
+
+/* Intro paragraph */
+.intro-paragraph {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Headings */
+.article-content h2 {
+  font-size: 22px;
+  margin: 26px 0 12px;
+  font-weight: 700;
+}
+
+.article-content h3 {
+  font-size: 18px;
+  margin: 22px 0 10px;
+  font-weight: 700;
+}
+
+/* -------- Highlight Box (重点段落) -------- */
+.article-highlight {
+  background: #f0fdf4;
+  border-left: 4px solid #16a34a;
+  padding: 14px 16px;
+  border-radius: 10px;
+  margin: 24px 0;
+  font-size: 15px;
+  color: #166534;
+}
+
+/* -------- Figure (插图) -------- */
+.article-figure {
+  margin: 24px 0;
+  text-align: center;
+}
+
+.article-figure img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.article-figure figcaption {
+  font-size: 13px;
+  color: #6b7280;
+  margin-top: 6px;
+}
+
+/* -------- Quote (引用块) -------- */
+.article-quote {
+  margin: 24px 0;
+  padding: 16px 18px;
+  border-left: 4px solid #16a34a;
+  background: #f3f4f6;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #374151;
+  font-style: italic;
+}
+
+.article-quote cite {
+  display: block;
+  margin-top: 8px;
+  font-size: 13px;
+  text-align: right;
+  color: #6b7280;
+}
+
+/* -------- Image + Text Row -------- */
+.image-text-row {
+  display: grid;
+  grid-template-columns: 1.2fr 2fr;
+  gap: 18px;
+  align-items: flex-start;
+  margin: 24px 0;
+}
+
+.itr-image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.itr-text p {
+  margin: 10px 0;
+}
+
+/* -------- List -------- */
+.article-list {
+  padding-left: 18px;
+  margin: 10px 0;
+}
+
+.article-list li {
+  margin: 8px 0;
+  font-size: 15px;
+}
+
+/* -------- Divider -------- */
+.article-divider {
+  border: none;
+  height: 1px;
+  background: #e5e7eb;
+  margin: 32px 0;
+}
+
+/* -------- Ad Box -------- */
+.article-ads {
+  background: #f3f4f6;
+  height: 200px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  margin: 30px 0;
+}
+
+
+/* ======================================== */
+/* ============== SIDEBAR ================ */
+/* ======================================== */
+
+.article-sidebar {
+  width: 100%;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.side-card {
+  margin-bottom: 14px;
+}
+
+.side-card-img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.side-card-title {
+  font-size: 14px;
+  margin-top: 6px;
+  color: #111827;
+}
+
+/* Tags */
+.side-tags, .tags-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag-item {
+  padding: 6px 12px;
+  background: #f3f4f6;
+  border-radius: 999px;
+  font-size: 14px;
+  color: #111827;
+  text-decoration: none;
+}
+
+
+/* ======================================== */
+/* =========== AUTHOR BOX (E-E-A-T) ======== */
+/* ======================================== */
+
+.author-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.author-photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 999px;
+  object-fit: cover;
+}
+
+.author-name {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.author-bio {
+  font-size: 14px;
+  color: #4b5563;
+  margin: 6px 0;
+}
+
+.author-updated {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+
+/* ======================================== */
+/* ============= RESPONSIVE =============== */
+/* ======================================== */
+
+@media (max-width: 980px) {
+  .article-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+}
+
+@media (max-width: 860px) {
+  .image-text-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .article-cover img {
+    height: 240px;
+  }
+  .article-sidebar {
+    max-width: 100%;
+  }
+}
